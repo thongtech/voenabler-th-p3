@@ -20,7 +20,7 @@ Have a test and make sure that they are working then you are good to go!
 
 ## VoLTE/VoWiFi Activation
 
-It is mandatory to [have your Pixel rooted with Magisk] (https://www.xda-developers.com/google-pixel-4-root-magisk/) to install this module.
+It is mandatory to [have your Pixel rooted with Magisk](https://www.xda-developers.com/google-pixel-4-root-magisk/) to install this module.
 Make sure that Magisk is installed properly on your system then proceed with these steps:
 
 1. __Install__ this module on Magisk and __reboot__ the system.
