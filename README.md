@@ -35,6 +35,10 @@ Make sure that Magisk is installed properly on your system then proceed with the
 
 1. __Uninstall__ the module from Magisk and __reboot__ your Pixel.
 
+## Downloads
+
+#### [__v1.00-20200303__ (latest release)](https://github.com/thongtech/voenabler-th-p3/releases/download/v1.00-20200303/voenabler-th-p3-v1.00-20200303.zip)
+
 ## OTA updates
 
 To keep VoLTE/VoWiFi working, after every OTA, __re-install the module__ by uninstalling then install the module again.
