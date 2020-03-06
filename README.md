@@ -26,7 +26,7 @@ Make sure that Magisk is installed properly on your system then proceed with the
 1. __Install__ this module on Magisk and __reboot__ the system.
 2. After reboot, go to __Settings -> Network and Internet -> Mobile network__ and __enable__ __*"Enhanced 4G LTE Mode"*__ and __*"Wi-Fi calling"*__.
 3. __Turn off__ Wi-Fi
-4. Go to __Phone -> dial \*#\*#4636#\*#\*__, tap at the top-right button, __select *"IMS Service Status"*__.
+4. Go to __Phone -> dial \*#\*#4636#\*#\*__ -> Phone information, tap at the top-right button, __select *"IMS Service Status"*__.
 4. Check if __IMS Registration__ is __Registered__ and __Voice over LTE__ is __Available__ then, congrats, you're succeeded.
 
 (Voice over Wi-Fi will be activated upon the *"Wi-Fi calling"* option in 2.)
