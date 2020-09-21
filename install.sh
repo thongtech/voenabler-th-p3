@@ -129,8 +129,8 @@ print_modname() {
   ui_print "|            for             |"
   ui_print "|    Pixel 3/3a/4 series     |"
   ui_print "|                            |"
-  ui_print "|       v1.00-20200303       |"
-  ui_print "|         by thongtech       |"
+  ui_print "|       v1.1-20200922        |"
+  ui_print "|       by thongtech         |"
   ui_print "|     based on nooriro's     |"
   ui_print "|                            |"
   ui_print "+----------------------------+"
@@ -194,17 +194,14 @@ on_install() {
   fi
   
   ui_print "- Installing Thai carrier configs"
-  # ui_print "- Extracting mcfg_sw.mbn files"
   unzip -o "$ZIPFILE" "mbn/${MBNTYPE}/*" -d "$MODPATH" >&2
   mkdir -p "${MODPATH}/system${MBNDIR}"
   mv "${MODPATH}/mbn/${MBNTYPE}/"* "${MODPATH}/system${MBNDIR}/"
   rm -rf "${MODPATH}/mbn"
   
-  # ui_print "- Getting current mbn_sw.txt from /vendor"
   local MODPATH_LIST="${MODPATH}/system${MBNDIR}/${LISTFILE}"
   cp "${MBNDIR}/${LISTFILE}" "$MODPATH_LIST"
   
-  # ui_print "- Adding mcfg_sw.mbn paths to mbn_sw.txt"
   # Add each path to mcfg_sw.mbn at the end of mbn_sw.txt
   #           ONLY IF the path is NOT EXIST in mbn_sw.txt
   echo "" >> "$MODPATH_LIST"
@@ -213,8 +210,8 @@ on_install() {
     grep -qF "$MBNFILE" "$MODPATH_LIST" || echo "$MBNFILE" >> "$MODPATH_LIST"
   done
   
-  # ui_print "- Removing /data/vendor/modem_fdr/fdr_check"
-  rm /data/vendor/modem_fdr/fdr_check
+  rm -rf /data/vendor/modem*
+  rm -rf /data/vendor/radio/*
 
   ui_print ""
   ui_print "After reboot, finds the options in Settings -> Network & Internet -> Mobile Network"

@@ -6,10 +6,12 @@ Systemlessly activates __VoLTE__ (Voice over LTE) and  __VoWiFi__ (Voice over Wi
 * __DTAC__ (dtac TriNet)
 * __TRUE-H__ (True Move H Universal Communication)
 
+Now support Android 10 and Android 11!
+
 
 ## Prerequisite
 
-Activate your VoLTE/VoWiFi service with your carrier first, by inserting SIM card into any phone listed in supported models on the website and activate via the USSD or call centre.
+Activate VoLTE (HD Voice/4G Calling) + VoWiFi (WiFi Calling) services with your carrier first, by inserting SIM card into any phone listed in supported models on the website and activate via the USSD or call centre.
 
 * [https://www.ais.co.th/4g/volte/](https://www.ais.co.th/4g/volte/) - AIS / Call: 1175
 * [https://www.dtac.co.th/network/4g-volte.html](https://www.dtac.co.th/network/4g-volte.html) - dtac / Call: 1678
@@ -24,7 +26,8 @@ It is mandatory to [have your Pixel rooted with Magisk](https://www.xda-develope
 Make sure that Magisk is installed properly on your system then proceed with these steps:
 
 1. __Install__ this module on Magisk and __reboot__ the system.
-2. After reboot, go to __Settings -> Network and Internet -> Mobile network__ and __enable__ __*"Enhanced 4G LTE Mode"*__ and __*"Wi-Fi calling"*__.
+2. After rebooting, __the phone may be showing "No service"__ due to the parsing of new configurations, so, please wait until the operator name showed up.
+2. Go to __Settings -> Network and Internet -> Mobile network__ and __enable__ __*"Enhanced 4G LTE Mode"*__ and __*"Wi-Fi calling"*__.
 3. __Turn off__ Wi-Fi
 4. Go to __Phone -> dial \*#\*#4636#\*#\*__ -> Phone information, tap at the top-right button, __select *"IMS Service Status"*__.
 4. Check if __IMS Registration__ is __Registered__ and __Voice over LTE__ is __Available__ then, congrats, you're succeeded.
@@ -33,11 +36,13 @@ Make sure that Magisk is installed properly on your system then proceed with the
 
 ## VoLTE/VoWiFi Deactivation
 
-1. __Uninstall__ the module from Magisk and __reboot__ your Pixel.
+1. __Uninstall__ the module from Magisk
+2. __Delete__ all the folders in /data/vendor that begin with modem
+3. __Reboot__ your Pixel.
 
 ## Downloads
 
-#### [__v1.00-20200303__ (latest release)](https://github.com/thongtech/voenabler-th-p3/releases/download/v1.00-20200303/voenabler-th-p3-v1.00-20200303.zip)
+#### [__v1.1-20200922__ (latest release)](https://github.com/thongtech/voenabler-th-p3/releases/download/v1.1-20200922/voenabler-th-p3-v1.1-20200922.zip)
 
 ## OTA updates
 
@@ -48,6 +53,9 @@ To keep VoLTE/VoWiFi working, after every OTA, __re-install the module__ by unin
 * This module also enables LTE 3CA (Carrier Aggregation) for AIS and TRUE-H on Pixel 4/4XL
 
 ## Update History
+
+#### v1.1-20200922
+* Support for Android 11
 
 #### v1.00-20200303
 * First release
