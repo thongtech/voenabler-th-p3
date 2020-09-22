@@ -5,6 +5,7 @@ Systemlessly activates __VoLTE__ (Voice over LTE) and  __VoWiFi__ (Voice over Wi
 * __AIS__ (Advanced Wireless Network)
 * __DTAC__ (dtac TriNet)
 * __TRUE-H__ (True Move H Universal Communication)
+* __MVNOs__ who run on AIS/DTAC/TRUE-H with supported services
 
 Now support Android 10 and Android 11!
 
@@ -13,9 +14,9 @@ Now support Android 10 and Android 11!
 
 Activate VoLTE (HD Voice/4G Calling) + VoWiFi (WiFi Calling) services with your carrier first, by inserting SIM card into any phone listed in supported models on the website and activate via the USSD or call centre.
 
-* [https://www.ais.co.th/4g/volte/](https://www.ais.co.th/4g/volte/) - AIS / Call: 1175
-* [https://www.dtac.co.th/network/4g-volte.html](https://www.dtac.co.th/network/4g-volte.html) - dtac / Call: 1678
-* [http://truemoveh.truecorp.co.th/news/detail/95](http://truemoveh.truecorp.co.th/news/detail/95) - TRUE-H / Call: 1242
+* [https://www.ais.co.th/4g/volte/](https://www.ais.co.th/4g/volte/), [https://www.ais.co.th/4g/vowifi/](https://www.ais.co.th/4g/vowifi/) - AIS / Call: 1175
+* [https://www.dtac.co.th/network/4g-volte.html](https://www.dtac.co.th/network/4g-volte.html), [https://www.dtac.co.th/network/wifi-calling.html](https://www.dtac.co.th/network/wifi-calling.html) - dtac / Call: 1678
+* [http://truemoveh.truecorp.co.th/news/detail/95](http://truemoveh.truecorp.co.th/news/detail/95), [https://truemoveh.truecorp.co.th/news/detail/473](https://truemoveh.truecorp.co.th/news/detail/473) - TRUE-H / Call: 1242
 
 Have a test and make sure that they are working then you are good to go!
 
